@@ -1,6 +1,6 @@
-extends Node2D
+extends KinematicBody2D
 
-var speed = 3
+var speed = 150
 
 func move(horizontal):
-	position.x += horizontal * speed
+	move_and_collide(Vector2(horizontal * speed, 0))
