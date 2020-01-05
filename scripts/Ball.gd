@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 const INITIAL_SPEED = 180
 const SPEED_MULTIPLIER = 1.1
-const PADDLE_POSITION_ADJUSTMENT = Vector2(0, -20)
+const PADDLE_POSITION_ADJUSTMENT = Vector2(0, -40)
 
 var velocity = Vector2.ZERO
 
