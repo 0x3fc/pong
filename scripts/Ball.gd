@@ -7,8 +7,6 @@ const PADDLE_POSITION_ADJUSTMENT = Vector2(0, -40)
 var velocity = Vector2.ZERO
 
 func _ready():
-	randomize()
-	rotate(deg2rad(randi() % 360))
 	start()
 
 func _physics_process(delta):
@@ -22,4 +20,5 @@ func _physics_process(delta):
 			velocity = velocity.bounce(n) * SPEED_MULTIPLIER
 
 func start():
-	velocity = Vector2.UP.rotated(rotation) * INITIAL_SPEED
+	randomize()
+	velocity = Vector2.UP.rotated(deg2rad(randi() % 360)) * INITIAL_SPEED
