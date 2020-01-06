@@ -16,3 +16,9 @@ func handle_ai_movement(delta):
 	var diff = ball.position.x - ai.position.x
 	var max_abs = ai.speed * delta
 	ai.move_and_collide(Vector2(clamp(diff, -max_abs, max_abs), 0))
+
+func place_ball():
+	ball.start()
+
+func new_round():
+	place_ball()
