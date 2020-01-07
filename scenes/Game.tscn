@@ -29,8 +29,8 @@ position = Vector2( -10, 256 )
 position = Vector2( 310, 260 )
 
 [node name="PlayerGoal" parent="." instance=ExtResource( 6 )]
-position = Vector2( 150, 590 )
+position = Vector2( 150, -80 )
 
 [node name="AIGoal" parent="." instance=ExtResource( 6 )]
-position = Vector2( 150, -80 )
+position = Vector2( 150, 590 )
 is_player = false

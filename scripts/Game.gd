@@ -11,6 +11,7 @@ var in_game = true
 
 func _physics_process(delta):
 	if not in_game:
+		handle_restart_game()
 		return
 	
 	handle_player_movement(delta)
