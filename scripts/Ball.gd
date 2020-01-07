@@ -26,6 +26,8 @@ func start():
 	randomize()
 	velocity = Vector2.UP.rotated(deg2rad(randi() % 360)) * INITIAL_SPEED
 
+func end():
+	velocity = Vector2.ZERO
 
 func _on_VisibilityNotifier2D_screen_exited():
 	game.new_round()

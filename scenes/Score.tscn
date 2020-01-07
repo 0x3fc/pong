@@ -25,3 +25,18 @@ margin_bottom = 294.0
 text = "0"
 align = 1
 valign = 1
+
+[node name="GameStatus" type="Label" parent="."]
+visible = false
+margin_right = 300.0
+margin_bottom = 510.0
+align = 1
+valign = 1
+
+[node name="Restart" type="Label" parent="GameStatus"]
+margin_top = 86.0
+margin_right = 300.0
+margin_bottom = 511.0
+text = "Press Space To Play Again"
+align = 1
+valign = 1
